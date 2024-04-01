@@ -1,8 +1,13 @@
 services:
+
   redis:
     image: 'redis:latest'
+    volumes:
+      - ./src/test/resources/redis.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
     ports:
       - 6379:6379
+
   redis-insight:
     image: redis/redisinsight:latest
     restart: always
@@ -10,6 +15,7 @@ services:
       - "5540:5540"
     volumes:
       - ./backing/insight:/data
+
   zipkin:
     image: 'openzipkin/zipkin:latest'
     ports:

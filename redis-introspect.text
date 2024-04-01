@@ -1,10 +1,5 @@
 Redis keys snapshot before run: 
 === start of keys ===
-me.riddle.boot.redis.reactive.welcome.model.state.Ticket
-me.riddle.boot.redis.reactive.welcome.model.state.Ticket:1241190059074903362
-me.riddle.boot.redis.reactive.welcome.model.state.Ticket:1241190059074903362:idx
-me.riddle.boot.redis.reactive.welcome.model.state.Ticket:closed:0
-me.riddle.boot.redis.reactive.welcome.model.state.Ticket:name:Dadar
 walk_in
 ==== end of keys ====
 

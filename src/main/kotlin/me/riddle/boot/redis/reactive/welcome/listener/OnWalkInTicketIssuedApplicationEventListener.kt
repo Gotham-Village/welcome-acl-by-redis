@@ -2,7 +2,7 @@ package me.riddle.boot.redis.reactive.welcome.listener
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 import me.riddle.boot.redis.reactive.welcome.model.state.Ticket
-import me.riddle.boot.redis.reactive.welcome.stream.Channel.Companion.customer_walk_in_event
+import me.riddle.boot.redis.reactive.welcome.model.event.EventModelKeying.Companion.customer_walk_in_event
 import me.riddle.boot.redis.reactive.welcome.stream.service.ClerkQueueStreamPublisher
 import org.springframework.data.rest.core.annotation.HandleAfterCreate
 import org.springframework.data.rest.core.annotation.HandleAfterSave

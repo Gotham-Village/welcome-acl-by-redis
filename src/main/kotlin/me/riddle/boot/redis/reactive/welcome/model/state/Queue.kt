@@ -5,4 +5,4 @@ import org.springframework.data.redis.core.RedisHash
 import org.springframework.data.redis.core.index.Indexed
 
 @RedisHash
-data class Queue(@Id var id: String?, @Indexed var name: String, @Indexed var comment: List<String>?)
+data class Queue(@Id val id: String?, @Indexed val name: String, @Indexed val comment: String?)

@@ -1,10 +1,10 @@
-package me.riddle.boot.redis.reactive.welcome
+package me.riddle.boot.redis.reactive.welcome.bootstrap.introspection
 
 import io.github.oshai.kotlinlogging.KotlinLogging
+import me.riddle.boot.redis.reactive.welcome.model.event.EventModelKeying.Companion.consumer_group_on_customer_tickets
+import me.riddle.boot.redis.reactive.welcome.model.event.EventModelKeying.Companion.customer_walk_in_event
 import me.riddle.boot.redis.reactive.welcome.model.event.application.RedisAlreadySetupEvent
 import me.riddle.boot.redis.reactive.welcome.model.event.application.RedisSetupCompletedEvent
-import me.riddle.boot.redis.reactive.welcome.stream.Channel.Companion.consumer_group_on_customer_tickets
-import me.riddle.boot.redis.reactive.welcome.stream.Channel.Companion.customer_walk_in_event
 import org.springframework.boot.CommandLineRunner
 import org.springframework.context.ApplicationEventPublisher
 import org.springframework.core.Ordered

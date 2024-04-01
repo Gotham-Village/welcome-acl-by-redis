@@ -4,8 +4,8 @@ import io.github.oshai.kotlinlogging.KotlinLogging
 import me.riddle.boot.redis.reactive.welcome.model.event.application.RedisSetupCompletedEvent
 import me.riddle.boot.redis.reactive.welcome.model.state.BellNotification
 import me.riddle.boot.redis.reactive.welcome.repository.ActiveBellsRepository
-import me.riddle.boot.redis.reactive.welcome.stream.Channel.Companion.consumer_group_on_customer_tickets
-import me.riddle.boot.redis.reactive.welcome.stream.Channel.Companion.customer_walk_in_event
+import me.riddle.boot.redis.reactive.welcome.model.event.EventModelKeying.Companion.consumer_group_on_customer_tickets
+import me.riddle.boot.redis.reactive.welcome.model.event.EventModelKeying.Companion.customer_walk_in_event
 import org.springframework.context.event.EventListener
 import org.springframework.data.redis.connection.ReactiveRedisConnectionFactory
 import org.springframework.data.redis.connection.stream.Consumer

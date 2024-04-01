@@ -6,5 +6,4 @@ import org.springframework.data.redis.repository.configuration.EnableRedisReposi
 
 @Configuration
 @EnableRedisRepositories(enableKeyspaceEvents = RedisKeyValueAdapter.EnableKeyspaceEvents.ON_STARTUP)
-class RedisNotificationConfiguration {
-}
+class RedisNotificationConfiguration

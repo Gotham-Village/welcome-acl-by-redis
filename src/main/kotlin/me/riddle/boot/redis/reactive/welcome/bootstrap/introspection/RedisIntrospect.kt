@@ -1,4 +1,4 @@
-package me.riddle.boot.redis.reactive.welcome
+package me.riddle.boot.redis.reactive.welcome.bootstrap.introspection
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.springframework.beans.factory.annotation.Autowired
@@ -19,7 +19,7 @@ class RedisIntrospect(@Autowired val reactiveTemplate: ReactiveRedisOperations<S
     override fun run(vararg args: String?) {
         val keys = reactiveTemplate.keys("*")
             .collectSortedList()
-            .block(5.seconds.toJavaDuration())
+            .block(1.seconds.toJavaDuration())
 
         fileWriter.use { it
             .write(keys?.joinToString(

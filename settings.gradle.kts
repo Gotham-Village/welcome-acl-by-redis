@@ -1,1 +1,1 @@
-rootProject.name = "welcome"
+rootProject.name = "welcome-acl-by-redis"

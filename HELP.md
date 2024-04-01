@@ -53,6 +53,7 @@ This project uses [Testcontainers at development time](https://docs.spring.io/sp
 Testcontainers has been configured to use the following Docker images:
 
 * [`redis:latest`](https://hub.docker.com/_/redis)
+* [`redis/redisinsight:latest`](https://hub.docker.com/r/redis/redisinsight/)
 * [`openzipkin/zipkin:latest`](https://hub.docker.com/r/openzipkin/zipkin/)
 
 Please review the tags of the used images and set them to the same as you're running in production.
@@ -64,8 +65,19 @@ Please review the tags of the used images and set them to the same as you're run
 * [Spring and Redis](https://developer.redis.com/develop/java/spring/ "Spring and Redis")
 * GitHub Spring Boot [Reactive Redis Guide](https://github.com/spring-guides/gs-spring-data-reactive-redis "gs-spring-data-reactive-redis")
   * [Redis Spring Guide](https://spring.io/guides/gs/spring-data-reactive-redis "Accessing Data Reactively with Redis") 
+* [Use Redis](https://redis.io/docs/manual/ "Redis Documentation")
+  * [Redis Server Configuration](https://raw.githubusercontent.com/redis/redis/7.2/redis.conf "Redis Configuration Explained")
+  * [Redis keyspace notifications](https://redis.io/docs/manual/keyspace-notifications/ "Redis keyspace notifications")
+  * [Redis Persistence](https://redis.io/docs/management/persistence/ "Redis Persistence")
+  * [Redis Client Side Caching](https://redis.io/docs/manual/client-side-caching/ "Redis Client Side Caching")
+  * [Redis Image](https://hub.docker.com/_/redis "Redis Image")
 
 ### Publications and Community
 
+* [Spring Data Redis](https://hantsy.github.io/spring-reactive-sample/data/data-redis.html "Spring Data Redis by Hantsy Bai Revision")
 * [Spring and Redis Streams Intro](https://honstain.com/spring-boot-and-redis-streams-intro/ "Spring and Redis Streams Intro by Anthony Honstain") - [Anthony Honstain](https://www.linkedin.com/in/anthony-honstain/ "Anthony Honstain, LinkedIn") - [Dev Notes](https://honstain.com/ "Dev Notes by Anthony Honstain")
-* 
+* [Reactive Event Streaming with Redis Streams in Spring Boot 3](https://blog.stackademic.com/reactive-event-streaming-with-redis-streams-in-spring-boot-3-4bf7dabf7196 "by Ruchira Madhushan Rajapaksha")
+* [Integrating Cucumber into a Spring Boot Project: A Step-by-Step Guide](https://medium.com/@francislainy.campos/integrating-cucumber-into-a-spring-boot-project-a-step-by-step-guide-f899c04bf81f "by Francis Campos")
+   * [Grasshopper Cucumber Adapter](https://github.com/grasshopper7/extentreports-cucumber7-adapter "Grasshopper Cucumber Adapter")
+   * [Cucumber-JVM 7 Report generation using ExtentReports Adapter plugin](https://ghchirp.site/3196/ "Cucumber-JVM 7 Report generation using ExtentReports Adapter plugin")
+* [Qodana Yaml Configuration](https://www.jetbrains.com/help/qodana/qodana-yaml.html "Qodana Yaml Configuration")

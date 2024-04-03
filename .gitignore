@@ -93,3 +93,6 @@ Icon
 ### Kotlin template
 # See Java Template
 
+### Project Specific Configuration
+# Insight before converting.
+/backing/insight/
